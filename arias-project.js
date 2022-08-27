@@ -11,7 +11,8 @@ function startTime(){
   let seconds1= today.getSeconds();
   let seconds2= today.getSeconds();
   let seconds3= today.getSeconds();
-  
+
+
   // intervals...........................................................
   
   var halt = document.getElementById("halt-seconds-intervals").value;
@@ -26,6 +27,7 @@ function startTime(){
     currentSecond1 = seconds1;
     console.log(seconds1);
     console.log(currentSecond1);
+    console.log("hvkhkg")
 
     let randomNum= Math.random()*12 +1;
     randomNum = Math.floor(randomNum);
@@ -342,6 +344,10 @@ function startTime(){
     document.getElementById("scale").innerHTML = scale;
   }
 
+
+  console.log(halt);
+  console.log(haltCH);
+  console.log(haltSC);
 }
 
 
