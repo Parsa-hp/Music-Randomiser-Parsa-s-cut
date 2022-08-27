@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Randomiser Parsa's Cut</title>
+
+    <link rel="stylesheet" href="arias-project.css">
+     
+  </head>
+
+  <body onload="startTime()">
+  
+    <div class="background">
+      <div class="explane">
+        Pull in the time gap in the circle of each part
+      </div>
+      <div class="chord-interval">
+        <div class="chord-div">
+          <p class="chord-text">
+            Chords
+          </p>
+          <input class="chord-input" type="text" id="halt-seconds-chords">   
+          <p class="chord-result" id="chords"></p>
+        </div>
+        <div class="interval-div">
+          <p class="interval-text">
+            Intervals
+          </p>
+          <input class="interval-input" type="text" id="halt-seconds-intervals">   
+          <p class="interval-result" id="intervals"></p>
+        </div>
+      </div>
+
+      <div class="scale-div">
+        <p class="scale-text">
+          Scales
+        </p>
+        <input class="scale-input" type="text" id="halt-seconds-scales">   
+        <p class="scale-result" id="scale"></p>
+      </div>    
+      
+    </div>
+    
+
+
+    <script src="arias-project.js"></script>
+
+    
+  </body>
+</html>
