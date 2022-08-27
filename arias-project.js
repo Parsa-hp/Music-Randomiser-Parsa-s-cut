@@ -1,13 +1,17 @@
 let today = new Date();
 let currentSecond;
-currentSecond= today.getSeconds();
+currentSecond1= today.getSeconds();
+currentSecond2= today.getSeconds();
+currentSecond3= today.getSeconds();
 
 function startTime(){
 
   let today = new Date();
   setTimeout(function(){startTime()},1000);
-  let seconds= today.getSeconds();
-
+  let seconds1= today.getSeconds();
+  let seconds2= today.getSeconds();
+  let seconds3= today.getSeconds();
+  
   // intervals...........................................................
   
   var halt = document.getElementById("halt-seconds-intervals").value;
@@ -18,10 +22,10 @@ function startTime(){
   }
 
   //////////////////////////////////////////////////////////////
-  if ((seconds-currentSecond)% halt == 0){
-    currentSecond = seconds;
-    console.log(seconds);
-    console.log(currentSecond);
+  if ((seconds1-currentSecond1)% halt == 0){
+    currentSecond1 = seconds1;
+    console.log(seconds1);
+    console.log(currentSecond1);
 
     let randomNum= Math.random()*12 +1;
     randomNum = Math.floor(randomNum);
@@ -82,10 +86,10 @@ function startTime(){
 
 
 
-  if ((seconds-currentSecond)% haltCH == 0){
-    currentSecond = seconds;
-    console.log(seconds);
-    console.log(currentSecond);
+  if ((seconds2-currentSecond2)% haltCH == 0){
+    currentSecond2 = seconds2;
+    console.log(seconds2);
+    console.log(currentSecond2);
 
     let randomNumCH= Math.random()*60 +1;
     randomNumCH = Math.floor(randomNumCH);
@@ -289,10 +293,10 @@ function startTime(){
 
   /////////////////////////////////////////////////////////
 
-  if ((seconds-currentSecond)% haltSC == 0){
-    currentSecond = seconds;
-    console.log(seconds);
-    console.log(currentSecond);
+  if ((seconds3-currentSecond3)% haltSC == 0){
+    currentSecond3 = seconds3;
+    console.log(seconds3);
+    console.log(currentSecond3);
 
     let randomNumSC= Math.random()*11 +1;
     randomNumSC = Math.floor(randomNumSC);
